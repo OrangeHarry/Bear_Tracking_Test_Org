@@ -5,6 +5,7 @@
             <lightning-datatable key-field="Id"
                                 data={accounts.data}
                                 columns={columns}
+                                onrowaction={handleRowAction}
             >
             <template if:true={errors}>
                 <p>{errors}</p>
